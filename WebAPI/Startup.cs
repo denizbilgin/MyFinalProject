@@ -30,8 +30,8 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IProductService,ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService,ProductManager>();
+            //services.AddSingleton<IProductDal, EfProductDal>();
             //IoC bizim yerimize nesneleri newlerler
             //yukarýdaki kodun anlamý: Eðer biri senden constructorda IProductService isterse ona arkaplanda ProductManager oluþtur ve onu ver
             //yukarýdaki 2. kodun anlamý: Eðer biri senden constructorda IProductDal isterse ona arkaplanda EfProductDal oluþtur ve onu ver
