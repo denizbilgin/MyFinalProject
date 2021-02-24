@@ -19,6 +19,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(p => p.UnitPrice).GreaterThanOrEqualTo(10).When(p => p.CategoryId == 1);
             //kendimiz bir kural yazacaksak aşağıdaki gibi yaparız
             RuleFor(p => p.ProductName).Must(StartWithA).WithMessage("ürünler A harfi ile başlamalı");
+        
         }
 
         private bool StartWithA(string arg)
