@@ -8,11 +8,11 @@ using System.Linq;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfUserDal : EfEntityRepositoryBase<User, NortwindContext>, IUserDal
+    public class EfUserDal : EfEntityRepositoryBase<User, NorthwindContext>, IUserDal
     {
         public List<OperationClaim> GetClaims(User user)
         {
-            using (var context = new NortwindContext())
+            using (var context = new NorthwindContext())
             {
                 var result = from operationClaim in context.OperationClaims
                              join userOperationClaim in context.UserOperationClaims

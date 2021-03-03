@@ -9,7 +9,7 @@ namespace DataAccess.Concrete.EntityFramework
 {
     //Context nesneleri Db tabloları ile proje classlarını ilişkilendiren classlardır
     //DbContext yazarak onun bir context olduğunu belirttik
-    public class NortwindContext:DbContext
+    public class NorthwindContext:DbContext
     {
         //Bu metot projenin hangi veritabanı ile ilişkili olacağını belirttiğimiz metottur
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
